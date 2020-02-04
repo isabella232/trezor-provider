@@ -5,7 +5,7 @@ import CacheSubprovider from 'web3-provider-engine/subproviders/cache.js';
 import { TrezorSubprovider } from '@0x/subproviders/lib/src/subproviders/trezor';
 import { RPCSubprovider } from '@0x/subproviders/lib/src/subproviders/rpc_subprovider';
 
-export interface ITrezorConnectorOptions {
+export interface ITrezorProviderOptions {
   manifestEmail: string;
   manifestAppUrl: string;
   rpcUrl: string;
@@ -15,7 +15,7 @@ export interface ITrezorConnectorOptions {
 }
 
 class TrezorProvider extends Web3ProviderEngine {
-  constructor(opts: ITrezorConnectorOptions) {
+  constructor(opts: ITrezorProviderOptions) {
     super({
       pollingInterval: opts.pollingInterval,
     });
