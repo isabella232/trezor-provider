@@ -1,3 +1,3 @@
-# @web3connect/trezor-provider
+# @web3modal/trezor-provider
 
 Web3 Provider for Trezor

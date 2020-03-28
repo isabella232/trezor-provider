@@ -1,5 +1,4 @@
-
-describe('@web3connect/trezor-provider', () => {
+describe('@web3modal/trezor-provider', () => {
   it('works', () => {
     // needs tests
   });
